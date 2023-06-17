@@ -1,0 +1,97 @@
+/*different locations of my job sections*/
+.job {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+}
+
+.wrapper {
+    margin: 0 auto;
+    width: 1000px;
+    background-color:rgb(166, 166, 166);
+}
+
+body{
+    background-color: rgb(124, 121, 94);
+}
+
+nav{
+    width: 100%; /*this makes the nav reach the full width of the homepage*/
+    height: 100px;
+    background-color: rgb(124, 121, 94);
+}
+
+/*this section affects the whole unordered list of activities*/
+
+/*list style in general*/
+ul li {
+    display:inline-block;/*this removes the bullet points from the list*/
+    float: left; /*this makes the list order inline of the activities i added*/
+    line-height: 100px;
+
+}
+/*ancher tag affects individual items in list*/
+ul li a {
+    text-decoration:none;/*this removes the underline element from the list*/
+    font-size: 1.42vw;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(0, 0, 0);
+    position: relative;
+    padding: 0 20px;/*spacing between each item in the horizontal list*/
+    text-decoration: bold;
+}
+
+/*hover colours for the different items in the list*/
+ul li b a:hover {
+    color: #d9ff00;
+}
+
+h1 {
+    font-size: 36px;
+    font-weight: 600;
+    color: antiquewhite;
+    text-align: center;
+}
+
+p{
+    color: rgb(0, 0, 0);
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 22px;
+    padding: 10px;
+}
+
+.row{
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+}
+
+/*attibutes for the statement boxes */
+.stadium{
+    flex-basis: 31%;
+    background: rgb(255, 255, 224);
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 20px 12px;
+    box-sizing: border-box;
+}
+
+h3{
+    text-align: center;
+    font-weight: 600;
+    margin: 10px 0;
+}
+img{
+    width: 100%;
+    height:400px;
+}
+/*adjusting to tablet size*/
+ @media(max-width:785px){
+    .row, .stadium, .h1, .h3, .p, .job, .body, .wrapper, .title, .img{
+        flex-direction: column;
+        width: 100%;
+    }
+
+ }

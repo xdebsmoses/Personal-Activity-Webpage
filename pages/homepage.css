@@ -1,0 +1,103 @@
+/*links section - gets rid of the bullet points/style patterns*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(166, 166, 166); /*creating the color of the body which only reflects the margins of the webpage*/
+}
+
+.wrapper {
+    margin: 0 auto; /*this puts the content in the middle of the page*/
+    width: 1000px;
+    background-color:white;/*the content in the wrapper*/
+}
+
+nav{
+    width: 100%; /*this makes the nav reach the full width of the homepage*/
+    height: 100px;
+    background-color: rgb(121, 120, 120);
+}
+
+/*this section affects the whole unordered list of activities*/
+
+/*list style in general*/
+ul li {
+    display:inline-block;/*this removes the bullet points from the list*/
+    float: left; /*this makes the list order inline of the activities i added*/
+    line-height: 100px;
+
+}
+/*ancher tag affects individual items in list*/
+ul li a {
+    text-decoration:none;/*this removes the underline element from the list*/
+    font-size: 1.42vw;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(0, 0, 0);
+    position: relative;
+    padding: 0 20px;/*spacing between each item in the horizontal list*/
+    text-decoration: bold;
+}
+
+/*hover colours for the different items in the list*/
+ul li b a:hover {
+    color: #Ffffff;
+}
+
+.headings {
+    text-align: center;
+    font-size:  4.1vw;
+    position:absolute;/*this positions itself within the pag*/
+    top: 30%;/*this shifts it closer to the top (the lower the no. the higher the position)*/
+    left: 50%;/*this puts the text in the center*/
+    text-shadow: 2px 2px 10px purple;/*the colour of the back of the text*/
+    transform: translate(-50%, -90%);/*repositions the heading in the x & y direction*/
+    font-weight: 100;/*how thick the text is*/
+    font-family: 'Times New Roman', Times, serif;
+}
+
+p {
+    text-align: center;
+    font-size:  4.1vw;
+    position: absolute;/*this positions itself within the pag*/
+    top: 40%;/*this shifts it closer to the top (the lower the no. the higher the position)*/
+    left: 50%;/*this puts the text in the center*/
+    transform: translate(-50%, -0%);/*repositions the heading in the x & y direction*/
+    text-shadow: 2px 2px 5px purple;/*the colour of the back of the text-how far the shaddow goes in the x,y,z direction*/
+    font-weight: 200;/*how thich the text is*/
+    font-family: cursive;
+}
+
+h1 {
+    text-align: center;
+    font-size: 7vw;
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.container {
+    position: relative;/*adjusting the position of the class relative to the surronding classes*/
+    max-width: 1000px;/*full size of the wrapper*/
+    margin: 0 auto;/*this puts the content in the middle of the page*/
+  }
+
+  .container img {vertical-align: middle;}
+
+  /*faded image*/
+  .container .content {
+     position: absolute;/*this positions itself within the page*/
+     bottom: 0; /*shifts the content down */
+     background: rgb(0, 0, 0); /* Fallback color */
+     background: rgba(0, 0, 0, 0.75); /* Black background with 0.75 opacity */
+     color: #f1f1f1;
+     width: 100%;/*width of the black shadow ontop of main section on page*/
+     height: 100%;/*height of the black shadow ontop of main section on page*/
+  }
+
+  @media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    .h1, .container, .ul li, .ul li a, .nav, .headings, .index-banner div, .wrapper, .p{
+      width: 100%}
+    }

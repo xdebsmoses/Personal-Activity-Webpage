@@ -1,0 +1,127 @@
+/*links section - gets rid of the bullet points/style patterns*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(130, 142, 132);/*creating the color of the body which only reflects the margins of the webpage*/
+}
+
+.wrapper {
+    margin: 0 auto;/*this puts the content in the middle of the page*/
+    width: 1000px;
+    background-color:white;/*the content in the wrapper*/
+}
+
+nav{
+    width: 70%;/*this makes the nav reach the full width of the homepage*/
+    height: 100px;
+    background-color: (130, 142, 132);/*the content in the wrapper*/
+}
+
+/*table section for investment page*/
+.table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+  }
+
+  /*list style in unordered list*/
+ul li {
+    list-style: none;
+    display: inline-block;/*this removes the bullet points from the list*/
+    float: left;/*this makes the list order inline of the activities i added*/
+    line-height: 100px;
+
+}
+/*ancher tag affects individual list*/
+ul li a {
+    text-decoration: none;/*this removes the underine element from the list*/
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #ffffff;
+    padding: 0 10px;/*spacing between each item in the horizontal list*/
+}
+
+/*hoover colours for the different items in the list*/
+ul li a:hover {
+    color: #34A853;
+}
+h1{
+    font-size: 7vw;
+}
+
+ul li a:hover {
+    color: rgb(182, 255, 195);
+}
+
+h2 {
+    color: red;
+}
+
+div h2 {
+    background-color: rgb(0, 255, 187);
+}
+
+.headings {
+    text-align: center;
+    font-size:  50px;;
+    position: absolute;/*this positions itself within the pag*/
+    top: 50%;/*this shifts it closer to the top (the lower the no. the higher the position)*/
+    left: 50%;/*this puts the text in the center*/
+    transform: translate(-50%, -50%);/*repositions the heading in the x & y direction*/
+    text-shadow: 2px 2px 5px rgb(0, 144, 14);
+    font-weight: 200;/*how thick the text is*/
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.paragraph {
+    text-align: center;
+    font-size:  30px;;
+    position: absolute;/*this positions itself within the pag*/
+    top: 40%;/*this shifts it closer to the top (the lower the no. the higher the position)*/
+    left: 50%;/*this puts the text in the center*/
+    transform: translate(-50%, -0%);/*repositions the heading in the x & y direction*/
+    text-shadow: 2px 2px 5px purple;
+    font-weight: 200;/*how thick the text is*/
+}
+
+b {
+    font-size:31px;
+    color: rgb(58, 159, 0);
+}
+
+h1 {
+    text-align: center;
+    font-size: 7vw;
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.container {
+    position: relative;/*this puts the position like the surronding classes*/
+    max-width: 1000px;/*full size of the wrapper*/
+    margin: 0 auto;/*this puts the content in the middle of the page*/
+  }
+
+  .container img {vertical-align: middle;}
+
+  /*faded image using internal CSS*/
+  .container .content {
+     position: absolute;/*this positions itself within the page*/
+     bottom: 0;/*shifts the content down */
+     background: rgb(0, 0, 0); /* Fallback color */
+     background: rgba(0, 0, 0, 0.75); /* Black background with 0.75 opacity */
+     color: #f1f1f1;
+     width: 100%;/*width of the black shadow ontop of main section on page*/
+     height: 100%;/*height of the black shadow ontop of main section on page*/
+     padding: 20px;
+  }
+
+@media only screen and (max-width: 785px) {
+    /* For mobile phones: */
+    .h1, .title, .container, .ul li, .ul li a, .nav, .headings, .index-banner div, .wrapper, .p{
+      width: 100%;
+   }
+  }

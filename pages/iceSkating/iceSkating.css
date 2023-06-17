@@ -1,0 +1,83 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: rgb(72, 88, 100);
+}
+
+.wrapper {
+    margin: 0 auto;/*this puts the content in the middle of the page*/
+    width: 1000px;
+    background-color:rgb(166, 166, 166);
+}
+
+nav{
+    width: 100%; /*this makes the nav reach the full width of the homepage*/
+    height: 100px;
+    background-color: rgb(72, 88, 98);
+}
+
+/*this section affects the whole unordered list of activities*/
+/*list style in general*/
+ul li {
+    display:inline-block;/*this removes the bullet points from the list*/
+    float: left; /*this makes the list order inline of the activities i added*/
+    line-height: 100px;
+
+}
+/*ancher tag affects individual items in list*/
+ul li a {
+    text-decoration:none;/*this removes the underline element from the list*/
+    font-size: 1.42vw;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(0, 0, 0);
+    position: relative;
+    padding: 0 20px;/*spacing between each item in the horizontal list*/
+    text-decoration: bold;
+}
+
+/*hover colours for the different items in the list*/
+ul li b a:hover {
+    color: #0133ff;
+}
+
+h1 {
+    color: rgb(98, 101, 141);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+}
+
+h3 {
+    float: right;
+    color: rgb(29, 82, 255);
+    text-align: center;
+}
+
+h2 {
+    text-align: center;
+}
+
+/* puts images in a row form instead of columns */
+.row {
+    display: flex;
+   }
+/* Three image containers (use 25% for four, and 50% for two, etc) */
+  .column {
+    flex: 33.33%; /*creating equal parts for the 3 images*/
+    width: 60%;
+    height: 80%;
+    padding: 0 30px; /*spaces between images*/
+  }
+
+p {
+    text-align:right;
+}
+
+@media only screen and (max-width: 785px) {
+    /* For mobile phones: */
+    .body, .paragraph, .h2, .headings, .ul li a,  .ul li , .nav, .column, .img, .body, .b, .wrapper, .p{
+      width: 100%;
+   }
+  }

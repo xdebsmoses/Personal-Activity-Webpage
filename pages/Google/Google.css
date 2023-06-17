@@ -1,0 +1,66 @@
+/*links section - gets rid of the bullet points/style patterns*/
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: rgb(166, 166, 166);
+}
+
+.wrapper {
+    margin: 0 auto;/*this puts the content in the middle of the page*/
+    width: 1000px;
+    background-color:#ffffff;/*the content in the wrapper*/
+}
+
+nav{
+    width: 100%;/*goes across the wholepage */
+    height: 100px;
+    background-color: rgb(121, 120, 120);;
+}
+
+
+/*this section affects the whole unordered list = ul*/
+
+/*list style in unordered list*/
+ul li {
+    list-style: none;
+    display: inline-block;/*this removes the bullet points from the list*/
+    float: left;/*this makes the list order inline of the activities i added*/
+    line-height: 100px;
+
+}
+/*ancher tag affects individual list*/
+ul li a {
+    text-decoration: none;/*this removes the underine element from the list*/
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #ffffff;
+    padding: 0 10px;/*spacing between each item in the horizontal list*/
+}
+
+/*hoover colours for the different items in the list*/
+ul li a:hover {
+    color: #34A853;
+}
+
+/*creatives a bit of space between headings*/
+.headings {
+    font-size: 30px;
+}
+
+head {
+    color:bisque;
+}
+
+p{
+    font-size: 20px;
+}
+/*makes it responsive*/
+@media only screen and (max-width: 785px) {
+    /* For mobile phones: */
+    .ul li, .ul li a, .h2, .headings, .h2, .nav, .body, .wrapper{
+      width: 100%;
+   }
+  }
